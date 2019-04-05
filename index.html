@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__proposition" id="js-proposition">
+          <div class="container">
+            <div class="proposition__body">
+              <h3 class="proposition__body-title">Скидки на все гладилки LM DENTAL -15%</h3>
+              <div class="proposition__body-img"><img src="img/proposition-img.png" alt="Скидки на все гладилки LM DENTAL -15%"></div>
+              <button class="proposition__body-cross" id="js-proposition__cross"><i class="fas fa-times"></i></button>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar">
+          <div class="navbar__menu">
+            <div class="container menu">
+              <div class="menu__content">
+                <div class="menu__content-side"><a href="/" class="auction"><span class="auction__icon"></span>Аукцион</a>
+                </div>
+                <ul class="menu__content-list">
+                  <li class="list__item"><a href="#" class="menu__link active">Акции</a></li>
+                  <li class="list__item"><a href="#" class="menu__link">Статьи</a></li>
+                  <li class="list__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
+                  <li class="list__item"><a href="#" class="menu__link">Гарантия и возврат</a></li>
+                  <li class="list__item"><a href="#" class="menu__link">Бренды</a></li>
+                  <li class="list__item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="navbar__contact">
+            <div class="container">
+              <div class="navbar__body">
+                <a href="/index.html" class="navbar__body-brand"><img src="img/logo.png" alt="Dental-Group" class="brand__logo"></a>
+                <button class="btn-outline-primary navbar__body-btn" id="js-callme">Перезвоните мне!</button>
+                <div class="callback" id="js-callback" style="background: rgb(255, 255, 255);">
+                  <div class="callback__block normal">
+                    <span class="callback__block-img"></span>
+                    <div class="callback__block-numbers">
+                      <a href="tel:0999999999" class="callback__number">099 999 99 99</a>
+                      <a href="tel:0999999999" class="callback__number">099 999 99 99</a>
+                    </div>
+                    <button class="callback__block-dropdown" id="js-callback-arrow" style="transform: rotate(0deg);"><span class="callback__block-arrow"></span></button>
+                  </div>
+                  <div class="callback__block active" style="display: none;">
+                    <p class="callback__block-worktime">з 8:00 до 21:00 (пн-вс)</p>
+                    <a href="mailto:dental-group@ukr.net" class="callback__block-mail"><span class="callback__block-mail-icon"></span>dental-group@ukr.net</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="main">
+        <div class="container">
+          <!-- Navigation -->
+          <div class="main__navigation">
+            <div class="catalog__sidebar">
+              <div class="catalog__sidebar-title" id="js-catalog-toggler">
+                <span class="bars"><i class="fas fa-bars"></i></span>
+                <h4>каталог товара</h4>
+              </div>
+              <ul class="catalog__sidebar-list" id="js-catalog" style="display: none;">
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Текущая акция
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Распродажи и Акции
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Анестетики
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Расходные материалы
+                    <span class="right-arrow"></span>
+                  </a>
+                  <div class="catalog__item-hover collapse">
+                    <div class="collapse__menu">
+                      <ul class="collapse__list">
+                        <li class="collapse__list-item"><a href="">Перчатки</a></li>
+                        <li class="collapse__list-item"><a href="">Слюноотсосы</a></li>
+                        <li class="collapse__list-item"><a href="">Пленки рентгеновские</a></li>
+                        <li class="collapse__list-item"><a href="">Маски медицинские</a></li>
+                        <li class="collapse__list-item"><a href="">Валики ватные</a></li>
+                        <li class="collapse__list-item"><a href="">Салфетки нагрудные</a></li>
+                        <li class="collapse__list-item"><a href="">Бахилы</a></li>
+                        <li class="collapse__list-item"><a href="">Инсулиновые шприцы</a></li>
+                        <li class="collapse__list-item"><a href="">Карпульные иглы</a></li>
+                        <li class="collapse__list-item"><a href="">Защитные экраны и очки для стоматолога</a></li>
+                      </ul>
+                      <button class="collapse__menu-full btn-solid-primary">Все товары <span class="collapse__menu-full-icon"></span></button>
+                    </div>
+                    <div class="collapse__banner">
+                      <img src="src/img/catalog-banner.jpg" alt="Баннер" class="collapse__banner-image">
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Пломбировочные материалы
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Стоматологические материалы
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Ортопедия
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Эндодонтия
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Зубным техникам
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Дезинфекция
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Наконечники<br>
+                    стоматологические
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Стоматологический
+                    инструментарий
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Стоматологическое<br>
+                    оборудование
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Плазмолифтинг и PRF, PRP
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Средства гигиены полости рта
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Cувенирная продукция
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="/" class="catalog__item-link">
+                    Стоматологические установки
+                    <span class="right-arrow"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="user">
+              <form class="user__search">
+                <input type="text" name="search-field" class="user__search-field" id="js-search-field">
+                <button class="user__search-button">искать</button>
+              </form>
+              <div class="user__prediction prediction">
+                <!-- Left side list w/out photo -->
+                <ul class="prediction__left-list">
+                  <li class="prediction__left-item"><a href="/" class="prediction__left-link">Композитный нагреватель 1</a>
+                  </li>
+                  <li class="prediction__left-item"><a href="/" class="prediction__left-link">Композитный нагреватель 2</a>
+                  </li>
+                  <li class="prediction__left-item"><a href="/" class="prediction__left-link">Композитный нагреватель 3</a>
+                  </li>
+                  <li class="prediction__left-item"><a href="/" class="prediction__left-link">Композитный нагреватель 4</a>
+                  </li>
+                  <li class="prediction__left-item"><a href="/" class="prediction__left-link">Композитный нагреватель 5</a>
+                  </li>
+                  <li class="prediction__left-item"><a href="/" class="prediction__left-link">Композитный нагреватель 6</a>
+                  </li>
+                  <li class="prediction__left-item"><a href="/" class="prediction__left-link">Композитный нагреватель 7</a>
+                  </li>
+                  <li class="prediction__left-item"><a href="/" class="prediction__left-link">Композитный нагреватель 8</a>
+                  </li>
+                  <li class="prediction__left-item"><a href="/" class="prediction__left-link">Композитный нагреватель 9</a>
+                  </li>
+                </ul>
+                <!-- Right side list w/ photo -->
+                <div class="prediction__right">
+                  <ul class="prediction__right-list">
+                    <li class="prediction__right-item">
+                      <a href="/" class="prediction__right-link">
+                        <div class="prediction__right-image">
+                          <img src="src/img/cart-product.jpg" alt="Композитный нагреватель">
+                        </div>
+                        <div class="prediction__right-name">Композитный нагреватель</div>
+                        <div class="prediction__right-price">Цена: <span class="proposition__price">2600 грн.</span></div>
+                      </a>
+                    </li>
+                    <li class="prediction__right-item">
+                      <a href="/" class="prediction__right-link">
+                        <div class="prediction__right-image">
+                          <img src="src/img/cart-product.jpg" alt="Композитный нагреватель">
+                        </div>
+                        <div class="prediction__right-name">Композитный нагреватель</div>
+                        <div class="prediction__right-price">Цена: <span class="prediction__price">2600 грн.</span></div>
+                      </a>
+                    </li>
+                    <li class="prediction__right-item">
+                      <a href="/" class="prediction__right-link">
+                        <div class="prediction__right-image">
+                          <img src="src/img/cart-product.jpg" alt="Композитный нагреватель">
+                        </div>
+                        <div class="prediction__right-name">Композитный нагреватель</div>
+                        <div class="prediction__right-price">Цена: <span class="prediction__price">2600 грн.</span></div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="prediction__right-button btn-solid-primary">
+                    Все результаты поиска <span class="right-arrow-white"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="user__buttons">
+                <button type="button" class="user__button-item wishlist" id="js-wishlist"></button>
+                <button type="button" class="user__button-item login" id="js-login"></button>
+                <button type="button" class="user__button-item cart" id="js-cart"><span class="cart__value">2</span></button>
+              </div>
+              <form class="cart__info" id="js-cart-info">
+                <!-- Cart body -->
+                <div class="cart__body">
+                  <button type="button" class="cart__info-cross" id="js-cart-cross"><span class="cart__cross"></span></button>
+                  <!-- Cart Item -->
+                  <div class="cart__product">
+                    <div class="cart__product-image">
+                      <img src="src/img/cart-product.jpg" alt="Композитный нагриватель">
+                    </div>
+                    <div class="cart__product-description">
+                      <div class="cart__product-name">Композитный нагриватель</div>
+                      <div class="cart__product-price"><span class="uppercase">ЦЕНА</span> - 2 600 грн.</div>
+                    </div>
+                    <div class="cart__product-counter">
+                      <button class="cart__product-minus">-</button>
+                      <input type="number" value="1" class="cart__product-input" readonly="">
+                      <button class="cart__product-plus">+</button>
+                    </div>
+                    <div class="cart__product-value">2 600 грн</div>
+                  </div>
+                  <!-- Cart Item -->
+                  <div class="cart__product">
+                    <div class="cart__product-image">
+                      <img src="src/img/cart-product.jpg" alt="Композитный нагриватель">
+                    </div>
+                    <div class="cart__product-description">
+                      <div class="cart__product-name">Композитный нагриватель</div>
+                      <div class="cart__product-price"><span class="uppercase">ЦЕНА</span> - 2 600 грн.</div>
+                    </div>
+                    <div class="cart__product-counter">
+                      <button class="cart__product-minus">-</button>
+                      <input type="number" value="1" class="cart__product-input" readonly="">
+                      <button class="cart__product-plus">+</button>
+                    </div>
+                    <div class="cart__product-value">2 600 грн</div>
+                  </div>
+                  <!-- Cart Item -->
+                  <div class="cart__product">
+                    <div class="cart__product-image">
+                      <img src="src/img/cart-product.jpg" alt="Композитный нагриватель">
+                    </div>
+                    <div class="cart__product-description">
+                      <div class="cart__product-name">Композитный нагриватель</div>
+                      <div class="cart__product-price"><span class="uppercase">ЦЕНА</span> - 2 600 грн.</div>
+                    </div>
+                    <div class="cart__product-counter">
+                      <button class="cart__product-minus">-</button>
+                      <input type="number" value="1" class="cart__product-input" readonly="">
+                      <button class="cart__product-plus">+</button>
+                    </div>
+                    <div class="cart__product-value">2 600 грн</div>
+                  </div>
+                  <!-- Cart Item -->
+                  <div class="cart__product">
+                    <div class="cart__product-image">
+                      <img src="src/img/cart-product.jpg" alt="Композитный нагриватель">
+                    </div>
+                    <div class="cart__product-description">
+                      <div class="cart__product-name">Композитный нагриватель</div>
+                      <div class="cart__product-price"><span class="uppercase">ЦЕНА</span> - 2 600 грн.</div>
+                    </div>
+                    <div class="cart__product-counter">
+                      <button class="cart__product-minus">-</button>
+                      <input type="number" value="1" class="cart__product-input" readonly="">
+                      <button class="cart__product-plus">+</button>
+                    </div>
+                    <div class="cart__product-value">2 600 грн</div>
+                  </div>
+                </div>
+                <!-- Cart Footer -->
+                <div class="cart__footer">
+                  <div class="cart__footer-info">
+                    <div class="cart__footer-total">
+                      Итого: <span class="black">2 товар</span>
+                    </div>
+                    <div class="cart__footer-price">
+                      На сумму: <span class="black">5 200 грн.</span>
+                    </div>
+                  </div>
+                  <button type="submit" class="cart__footer-button">Оформить заказ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">  
+        <ul class="breadcrumb">
+          <li><a href="#">Главая</a></li>
+          <li><a href="#">Товары и услуги</a></li>
+          <li><a href="#">Стомотологическое оборудование</a></li> 
+          <li class="breadcrumb__active">Дополнительное оборудование</li>
+        </ul>
+      </div>
+      <div class="flex-row">
+        <div class="left-col"> 
+          <div class="left-col__title-accordion">
+            Фильтры:
+          </div>
+          <div id="accordion">
+
+            <h3>ЦЕНА</h3>
+            <div>
+              <div class="left-col__slider">
+                <label class="left-col__title" for="amount"></label>
+                <div class="left-col__slider-track" id="slider-range"></div>
+                  <div class="flex-row">
+                    <input class="left-col__slider--amount-min" type="text" id="amount-min" reedonly >
+                    <input class="left-col__slider--amount-max" type="text" id="amount-max">
+                  </div>
+                <input class="left-col__slider--btn" type="submit" value="OK">
+              </div>
+            </div>
+            <h3>ЦВЕТ</h3>
+            <div>
+              <div class="filter__list filter__list--color">
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" value="on">
+                  <a title="darkslategray" href="#" target="_self" class="filter__name--color" >
+                    <span class="filter__color-item darkslategray" style="background-color: rgb(49,56,91);"></span>
+                  </a>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" value="on">
+                  <a title="Cиренивый" href="#" target="_self" class="filter__name--color">
+                    <span class="filter__color-item purple" style="background-color: rgb(126,118,242);"></span>
+                  </a>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" value="on">
+                  <a title="Оранжевый" href="#" target="_self" class="filter__name--color">
+                    <span class="filter__color-item orange" style="background-color: rgb(255,193,24);"></span>
+                  </a>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" value="on">
+                  <a title="Разноцветный" href="#" target="_self" class="filter__name--color">
+                    <span class="filter__color-item varicoloured" style="background: url(../img/varicoloured.png)no-repeat 92%;"></span>
+                  </a>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" value="on">
+                  <a title="Голубой" href="#" target="_self" class="filter__name--color">
+                    <span class="filter__color-item blue" style="background-color: rgb(0,203,228);"></span>
+                  </a>
+                </label>
+              </div>
+            </div>
+            <h3>ПРОИЗВОДИТЕЛЬ</h3>
+            <div>
+              <form action="" method="post" class="search">
+                <input type="submit" name="" value="" class="submit" />
+                <input type="search" name="" placeholder="поиск" class="input" />                
+              </form>
+            </div>
+            <h3>Lorem</h3>
+            <div>
+              <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+            </div>
+          </div>
+              
+        </div>
+        <div class="flex-col">
+            <div class="flex-row">
+              <div class="filter-active">
+                <ul class="filter-active__list">
+                  <li class="filter-active__list--item">
+                    Lorem 1<input class="filter-active__list--close" name="del" type="button" value=""/>
+                  </li>
+                  <li class="filter-active__list--item">
+                    Lorem 2<input class="filter-active__list--close" name="del" type="button" value=""/>
+                  </li>
+                  <li class="filter-active__list--item">
+                    Lorem 3<input class="filter-active__list--close" name="del" type="button" value=""/>
+                  </li>
+                </ul>
+              </div>
+              <div class="sort"><b>Сортировать:</b>
+                <select>
+                  <option value="#" selected="selected">Сначала новые</option>
+                          <option value="#">От дешевых к дороги</option>
+                          <option value="#">От дорогих к дешевым</option>
+                          <option value="#">Популярные</option>
+                          <option value="#">Новинки</option>
+                          <option value="#">Акционные</option>
+                </select>
+              </div>
+            </div>
+            <div class="product-layout">
+              <div class="card card__card">
+                  <div class="card__header">
+                    <!-- Stock (Есть в наличии) / Less (Заканчивается) / Wait (Ожидается)-->
+                    <div class="card__available stock">
+                      Есть в наличии
+                    </div>
+                    <div class="card__number">Код: <span class="card__number-code">9345</span></div>
+                  </div>
+                  <div class="card__body">
+                    <!-- New (Новинка) / Sales (Акция) -->
+                    <div class="card__status"></div>
+                    <div class="card__image">
+                      <img src="img/product-card-image.jpg" alt="Композитный нагреватель" class="card__image-src">
+                    </div>
+                    <div class="card__name">
+                      Композитный
+                      нагреватель
+                    </div>
+                    <div class="card__rating">
+                      <!-- Input will be here or buttons -->
+                    </div>
+                    <div class="card__price">Цена: <span class="card__price-value">2600 грн.</span></div>
+                  </div>
+                  <div class="card__footer">
+                    <button class="card__wish"><span class="card__wish-icon"></span></button>
+                    <button class="card__button"><span class="card__button-icon"></span>Купить</button>
+                  </div>
+              </div>
+              <div class="card card__card">
+                  <div class="card__header">
+                    <!-- Stock (Есть в наличии) / Less (Заканчивается) / Wait (Ожидается)-->
+                    <div class="card__available stock">
+                      Есть в наличии
+                    </div>
+                    <div class="card__number">Код: <span class="card__number-code">9345</span></div>
+                  </div>
+                  <div class="card__body">
+                    <!-- New (Новинка) / Sales (Акция) -->
+                    <div class="card__status"></div>
+                    <div class="card__image">
+                      <img src="img/product-card-image.jpg" alt="Композитный нагреватель" class="card__image-src">
+                    </div>
+                    <div class="card__name">
+                      Композитный
+                      нагреватель
+                    </div>
+                    <div class="card__rating">
+                      <!-- Input will be here or buttons -->
+                    </div>
+                    <div class="card__price">Цена: <span class="card__price-value">2600 грн.</span></div>
+                  </div>
+                  <div class="card__footer">
+                    <button class="card__wish"><span class="card__wish-icon"></span></button>
+                    <button class="card__button"><span class="card__button-icon"></span>Купить</button>
+                  </div>
+              </div>
+              <div class="card card__card">
+                  <div class="card__header">
+                    <!-- Stock (Есть в наличии) / Less (Заканчивается) / Wait (Ожидается)-->
+                    <div class="card__available stock">
+                      Есть в наличии
+                    </div>
+                    <div class="card__number">Код: <span class="card__number-code">9345</span></div>
+                  </div>
+                  <div class="card__body">
+                    <!-- New (Новинка) / Sales (Акция) -->
+                    <div class="card__status"></div>
+                    <div class="card__image">
+                      <img src="img/product-card-image.jpg" alt="Композитный нагреватель" class="card__image-src">
+                    </div>
+                    <div class="card__name">
+                      Композитный
+                      нагреватель
+                    </div>
+                    <div class="card__rating">
+                      <!-- Input will be here or buttons -->
+                    </div>
+                    <div class="card__price">Цена: <span class="card__price-value">2600 грн.</span></div>
+                  </div>
+                  <div class="card__footer">
+                    <button class="card__wish"><span class="card__wish-icon"></span></button>
+                    <button class="card__button"><span class="card__button-icon"></span>Купить</button>
+                  </div>
+              </div>
+              <div class="card card__card">
+                  <div class="card__header">
+                    <!-- Stock (Есть в наличии) / Less (Заканчивается) / Wait (Ожидается)-->
+                    <div class="card__available stock">
+                      Есть в наличии
+                    </div>
+                    <div class="card__number">Код: <span class="card__number-code">9345</span></div>
+                  </div>
+                  <div class="card__body">
+                    <!-- New (Новинка) / Sales (Акция) -->
+                    <div class="card__status"></div>
+                    <div class="card__image">
+                      <img src="img/product-card-image.jpg" alt="Композитный нагреватель" class="card__image-src">
+                    </div>
+                    <div class="card__name">
+                      Композитный
+                      нагреватель
+                    </div>
+                    <div class="card__rating">
+                      <!-- Input will be here or buttons -->
+                    </div>
+                    <div class="card__price">Цена: <span class="card__price-value">2600 грн.</span></div>
+                  </div>
+                  <div class="card__footer">
+                    <button class="card__wish"><span class="card__wish-icon"></span></button>
+                    <button class="card__button"><span class="card__button-icon"></span>Купить</button>
+                  </div>
+              </div>
+              <div class="card card__card">
+                  <div class="card__header">
+                    <!-- Stock (Есть в наличии) / Less (Заканчивается) / Wait (Ожидается)-->
+                    <div class="card__available stock">
+                      Есть в наличии
+                    </div>
+                    <div class="card__number">Код: <span class="card__number-code">9345</span></div>
+                  </div>
+                  <div class="card__body">
+                    <!-- New (Новинка) / Sales (Акция) -->
+                    <div class="card__status"></div>
+                    <div class="card__image">
+                      <img src="img/product-card-image.jpg" alt="Композитный нагреватель" class="card__image-src">
+                    </div>
+                    <div class="card__name">
+                      Композитный
+                      нагреватель
+                    </div>
+                    <div class="card__rating">
+                      <!-- Input will be here or buttons -->
+                    </div>
+                    <div class="card__price">Цена: <span class="card__price-value">2600 грн.</span></div>
+                  </div>
+                  <div class="card__footer">
+                    <button class="card__wish"><span class="card__wish-icon"></span></button>
+                    <button class="card__button"><span class="card__button-icon"></span>Купить</button>
+                  </div>
+              </div>
+              <div class="card card__card">
+                  <div class="card__header">
+                    <!-- Stock (Есть в наличии) / Less (Заканчивается) / Wait (Ожидается)-->
+                    <div class="card__available stock">
+                      Есть в наличии
+                    </div>
+                    <div class="card__number">Код: <span class="card__number-code">9345</span></div>
+                  </div>
+                  <div class="card__body">
+                    <!-- New (Новинка) / Sales (Акция) -->
+                    <div class="card__status"></div>
+                    <div class="card__image">
+                      <img src="img/product-card-image.jpg" alt="Композитный нагреватель" class="card__image-src">
+                    </div>
+                    <div class="card__name">
+                      Композитный
+                      нагреватель
+                    </div>
+                    <div class="card__rating">
+                      <!-- Input will be here or buttons -->
+                    </div>
+                    <div class="card__price">Цена: <span class="card__price-value">2600 грн.</span></div>
+                  </div>
+                  <div class="card__footer">
+                    <button class="card__wish"><span class="card__wish-icon"></span></button>
+                    <button class="card__button"><span class="card__button-icon"></span>Купить</button>
+                  </div>
+              </div>
+              <div class="card card__card">
+                  <div class="card__header">
+                    <!-- Stock (Есть в наличии) / Less (Заканчивается) / Wait (Ожидается)-->
+                    <div class="card__available stock">
+                      Есть в наличии
+                    </div>
+                    <div class="card__number">Код: <span class="card__number-code">9345</span></div>
+                  </div>
+                  <div class="card__body">
+                    <!-- New (Новинка) / Sales (Акция) -->
+                    <div class="card__status"></div>
+                    <div class="card__image">
+                      <img src="img/product-card-image.jpg" alt="Композитный нагреватель" class="card__image-src">
+                    </div>
+                    <div class="card__name">
+                      Композитный
+                      нагреватель
+                    </div>
+                    <div class="card__rating">
+                      <!-- Input will be here or buttons -->
+                    </div>
+                    <div class="card__price">Цена: <span class="card__price-value">2600 грн.</span></div>
+                  </div>
+                  <div class="card__footer">
+                    <button class="card__wish"><span class="card__wish-icon"></span></button>
+                    <button class="card__button"><span class="card__button-icon"></span>Купить</button>
+                  </div>
+              </div>
+              <div class="card card__card">
+                  <div class="card__header">
+                    <!-- Stock (Есть в наличии) / Less (Заканчивается) / Wait (Ожидается)-->
+                    <div class="card__available stock">
+                      Есть в наличии
+                    </div>
+                    <div class="card__number">Код: <span class="card__number-code">9345</span></div>
+                  </div>
+                  <div class="card__body">
+                    <!-- New (Новинка) / Sales (Акция) -->
+                    <div class="card__status"></div>
+                    <div class="card__image">
+                      <img src="img/product-card-image.jpg" alt="Композитный нагреватель" class="card__image-src">
+                    </div>
+                    <div class="card__name">
+                      Композитный
+                      нагреватель
+                    </div>
+                    <div class="card__rating">
+                      <!-- Input will be here or buttons -->
+                    </div>
+                    <div class="card__price">Цена: <span class="card__price-value">2600 грн.</span></div>
+                  </div>
+                  <div class="card__footer">
+                    <button class="card__wish"><span class="card__wish-icon"></span></button>
+                    <button class="card__button"><span class="card__button-icon"></span>Купить</button>
+                  </div>
+              </div>
+            </div>
+        </div>  
+      </div>
+</body>
+</html>
